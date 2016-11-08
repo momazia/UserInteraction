@@ -111,13 +111,21 @@ nav a:hover {
 	flex-direction: row-reverse;
 }
 
-.box_900 {
+.box_900, .box_400 {
 	margin-bottom: 25px;
 	border: 1px solid;
 	border-color: #EFEFEF;
 	background: #fff;
 	border-radius: 3px;
 	padding: 0px;
+}
+
+.box_400 {
+	width: 400px;
+}
+
+.box_900 {
+	width: 900px;
 }
 
 .top_margin {
@@ -130,10 +138,6 @@ nav a:hover {
 
 .top_margin_small {
 	margin-top: 25px;
-}
-
-.box_900 {
-	width: 900px;
 }
 
 .form_body {
@@ -169,13 +173,22 @@ nav a:hover {
 
 .form_header_row {
 	padding-bottom: 10px;
+	width: 350px;
 }
 
-.form_header_row>h3, .form_header_row>h3 {
+.home_header_row {
+	width: 850px;
+}
+
+.form_header_row>h3, .home_header_row>h3 {
 	font-size: 3rem;
 	font-weight: 300;
-	text-align: center;
+	text-align: left;
 	width: 100%;
+}
+
+.home_header_row>h3 {
+	padding-left: 90px;
 }
 
 .input_textbox {
@@ -191,6 +204,16 @@ nav a:hover {
 	border: 1px solid #dbdbdb;
 }
 
+.input_dropdown {
+	width: inherit;
+	font-size: 1.6rem;
+	font-family: Arial, sans-serif;
+	border-radius: 5px;
+	padding: 5px 10px;
+	box-sizing: border-box;
+	height: 30px;
+}
+
 .submit_button, .submit_button_full_width {
 	margin: 0px 10px;
 	display: inline-block;
@@ -199,7 +222,7 @@ nav a:hover {
 	border-radius: 50px 50px 50px 50px;
 	-webkit-border-radius: 50px 50px 50px 50px;
 	-moz-border-radius: 50px 50px 50px 50px;
-	width: auto;
+	flex: 1;
 	height: auto;
 	padding: 8px 40px;
 	text-align: center;
@@ -207,6 +230,7 @@ nav a:hover {
 	transition: 0.3s ease;
 	cursor: pointer;
 	font-size: 14px;
+	height: auto;
 }
 
 .submit_button_full_width {
@@ -225,4 +249,28 @@ nav a:hover {
 
 .link:hover {
 	text-decoration: underline;
+}
+
+.home_body_row {
+	width: 100%;
+	color: #1695A3;
+	justify-content: center;
+}
+
+.home_account {
+	display: flex;
+	width: 150px;
+	height: 150px;
+	justify-content: center;
+	margin: 25px;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border: 2px solid #ACF0F2;
+	padding: 20px;
+	justify-content: center;
+}
+
+.home_account:hover {
+	border: 2px solid #1695A3;
 }

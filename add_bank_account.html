@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Signup</title>
+<title>Add bank account</title>
 <link rel="stylesheet" href="css/default.css">
 </head>
 <body>
@@ -12,7 +12,9 @@
 				<a href="home.html">One Bank</a>
 			</p>
 			<nav>
-				<a href="login.html">Login</a>
+				<a href="home.html">Home</a> 
+				<a href="">Profile</a> 
+				<a href="login.html">Logout</a>
 			</nav>
 		</div>
 	</header>
@@ -21,34 +23,35 @@
 		<div class="flex_container_column">
 			<div class="box_400 top_margin flex_container_column">
 				<div class="form_header_row">
-					<h3>Signup</h3>
+					<h3>Add bank account</h3>
 				</div>
-				<form name="signupForm" id="signupForm">
+				<form name="addBankAccountForm" id="addBankAccountForm">
 					<div class="form_body">
 						<div class="form_row bottom_margin">
-							<p>Email</p>
+							<p>Bank name</p>
+							<select class="input_dropdown">
+								<option></option>
+								<option>Bank of America</option>
+								<option>Citi bank</option>
+								<option>Chase bank</option>
+							</select>
+						</div>
+						<div class="form_row bottom_margin">
+							<p>Account number</p>
+							<input type="text" class="input_textbox" />
+						</div>
+						<div class="form_row bottom_margin">
+							<p>Username</p>
 							<input type="text" class="input_textbox" />
 						</div>
 						<div class="form_row bottom_margin">
 							<p>Password</p>
 							<input type="password" class="input_textbox" />
 						</div>
-						<div class="form_row bottom_margin">
-							<p>Re-enter password</p>
-							<input type="password" class="input_textbox" />
-						</div>
-						<div class="form_row bottom_margin">
-							<p>First name</p>
-							<input type="text" class="input_textbox" />
-						</div>
-						<div class="form_row bottom_margin">
-							<p>Last name</p>
-							<input type="text" class="input_textbox" />
-						</div>
 						<div class="form_row_buttons flex_container_row bottom_margin">
 							<span id="reset" class="submit_button"
-								onclick="document.getElementById('signupForm').reset();">Reset</span>
-							<span id="submit" class="submit_button" onclick="window.location='home.html'">Submit</span>
+								onclick="document.getElementById('addBankAccountForm').reset();">Reset</span>
+							<span id="submit" class="submit_button" onclick="window.location='home.html'">Add</span>
 						</div>
 					</div>
 				</form>
