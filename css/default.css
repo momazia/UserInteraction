@@ -274,3 +274,27 @@ nav a:hover {
 .home_account:hover {
 	border: 2px solid #1695A3;
 }
+
+.details_header_row {
+	width: inherit;
+	justify-content: space-around;
+	height: 70px;
+}
+
+.details_header_row_item, .details_header_row_item_selected {
+	border: 1px solid #dbdbdb;
+	width: inherit;
+	text-align: center;
+	height: inherit;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.details_header_row_item_selected {
+	background-color: #dbdbdb;
+}
+
+.details_header_row_item>a, .details_header_row_item_selected>a {
+	color: #262626;
+}
