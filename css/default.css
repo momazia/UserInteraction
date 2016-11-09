@@ -295,7 +295,7 @@ nav a:hover {
 }
 
 .details_header_row_item_selected {
-	background-color: #dbdbdb;
+	background-color: #fafafa;
 }
 
 .details_header_row_item:hover {
@@ -310,6 +310,10 @@ nav a:hover {
 .details_body {
 	width: inherit;
 	padding: 0px 70px;
+}
+
+.transfer_body {
+	margin-top: 30px;
 }
 
 .details_body_header>h2 {
@@ -360,4 +364,12 @@ nav a:hover {
 	text-align: right;
 	margin: 10px 15px;
 	font-size: 3rem;
+}
+
+.print_receipt {
+	display: flex;
+}
+
+.print_receipt>img {
+	width: 20%;
 }
