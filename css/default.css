@@ -260,9 +260,9 @@ nav a:hover {
 .home_account {
 	display: flex;
 	width: 150px;
-	height: 150px;
+	height: 100px;
 	justify-content: center;
-	margin: 25px;
+	margin: 15px;
 	border-radius: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
