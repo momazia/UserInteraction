@@ -258,6 +258,7 @@ nav a:hover {
 }
 
 .home_account {
+	cursor: pointer;
 	display: flex;
 	width: 150px;
 	height: 100px;
@@ -289,12 +290,86 @@ nav a:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 
 .details_header_row_item_selected {
+	background-color: #fafafa;
+}
+
+.details_header_row_item:hover {
 	background-color: #dbdbdb;
 }
 
 .details_header_row_item>a, .details_header_row_item_selected>a {
 	color: #262626;
+	justify-content: center;
+}
+
+.details_body {
+	width: inherit;
+	padding: 0px 70px;
+}
+
+.transfer_body {
+	margin-top: 30px;
+}
+
+.details_body_header>h2 {
+	flex: 2;
+	margin-left: 70px;
+}
+
+.details_body_header_balance {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	font-size: 2rem;
+}
+
+.details_body_header_balance>h3 {
+	border: 1px solid #262626;
+	padding: 5px 15px;
+}
+
+.recent_transactions, .rc_header, .rc_row {
+	margin: 0px 70px;
+}
+
+.rc_header {
+	border: 1px solid #dbdbdb;
+	padding-left: 15px;
+}
+
+.rc_row {
+	border: 1px solid #dbdbdb;
+	border-top-width: 0px;
+	padding-left: 15px;
+}
+
+.recent_transactions>h3 {
+	width: 100%;
+}
+
+.rc_name {
+	flex: 4;
+	margin: 10px 15px;
+	font-size: 2rem;
+}
+
+.rc_price {
+	flex: 1;
+	text-align: -webkit-right;
+	text-align: right;
+	margin: 10px 15px;
+	font-size: 3rem;
+}
+
+.print_receipt {
+	display: flex;
+}
+
+.print_receipt>img {
+	width: 20%;
 }
